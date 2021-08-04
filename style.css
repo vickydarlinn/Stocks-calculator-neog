@@ -31,7 +31,7 @@ body {
   width: 700px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 5px;
   background-color: var(--white);
 }
@@ -76,7 +76,7 @@ body {
   color: var(--white);
   font-size: 2rem;
   border-radius: 5px;
-  padding: 3rem;
+  padding: 2rem;
 }
 /* social media */
 .social_media {

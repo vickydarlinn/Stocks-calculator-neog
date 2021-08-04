@@ -1,17 +1,14 @@
 "use stict";
+const initialStocksPriceInitial = document.querySelector(".initialstocksprice");
+const quantityOfStocksInitial = document.querySelector(".quantityofstocks");
+const currentStocksPriceInitial = document.querySelector(".currentstocksprice");
 
 const btn = document.querySelector(".btn");
 const output = document.querySelector(".output");
 btn.addEventListener("click", function () {
-  const initialStocksPrice = Number(
-    document.querySelector(".initialstocksprice").value
-  );
-  const quantityOfStocks = Number(
-    document.querySelector(".quantityofstocks").value
-  );
-  const currentStocksPrice = Number(
-    document.querySelector(".currentstocksprice").value
-  );
+  const initialStocksPrice = Number(initialStocksPriceInitial.value);
+  const quantityOfStocks = Number(quantityOfStocksInitial.value);
+  const currentStocksPrice = Number(currentStocksPriceInitial.value);
   if (
     initialStocksPrice <= 0 ||
     quantityOfStocks <= 0 ||
@@ -41,7 +38,7 @@ btn.addEventListener("click", function () {
       output.style.backgroundColor = "#DC143C";
     }
   }
-  currentStocksPrice.value = "";
-  quantityOfStocks.value = "";
-  initialStocksPrice.value = "";
+  currentStocksPriceInitial.value = "";
+  quantityOfStocksInitial.value = "";
+  initialStocksPriceInitial.value = "";
 });
