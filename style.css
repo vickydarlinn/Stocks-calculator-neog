@@ -58,9 +58,11 @@ body {
   border-radius: 10px;
   padding: 0.5rem 5rem;
   font-size: 1.6rem;
-  width: 50%;
-  margin: 2rem auto;
+  margin: 3rem auto;
   cursor: pointer;
+}
+.center {
+  text-align: center;
 }
 .btn:hover {
   color: var(--very_dark_cyan);
