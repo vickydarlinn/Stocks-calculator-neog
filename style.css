@@ -69,7 +69,7 @@ body {
 .input_data {
 }
 .output_data {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-color: var(--very_dark_cyan);
   color: var(--white);
   font-size: 2rem;
