@@ -17,7 +17,7 @@ btn.addEventListener("click", function () {
     quantityOfStocks <= 0 ||
     currentStocksPrice <= 0
   ) {
-    output.style.backgroundColor = "black";
+    output.style.backgroundColor = "#696969";
     output.style.textAlign = "center";
     output.textContent = "Please put proper values 😔 ";
   } else {
@@ -27,18 +27,18 @@ btn.addEventListener("click", function () {
     if (pl === 0) {
       output.textContent = "No profit no loss 😑 ";
     } else if (pl > 0) {
-      output.textContent = `waow...You are in profit of ${(
+      output.textContent = `wowww...You are in profit of ${(
         (pl / buy) *
         100
       ).toFixed(2)}% which is ${pl}Rs. It's party🎉 time...paytm me ${
         pl / 4
-      }Rs.`;
-      output.style.backgroundColor = "green";
+      }Rs. on my number 7015094***.`;
+      output.style.backgroundColor = "#228B22";
     } else {
       output.textContent = `You are in loss of ${(-(pl / buy) * 100).toFixed(
         2
       )}% which is ${-pl}Rs.😥`;
-      output.style.backgroundColor = "red";
+      output.style.backgroundColor = "#DC143C";
     }
   }
   currentStocksPrice.value = "";
