@@ -1,132 +1,112 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
---light_grayish_cyan: hsl(183, 15%, 76%);
---very_dark_cyan: hsl(183, 100%, 15%);
---strong_cyan: hsl(172, 67%, 45%);
---white: hsl(0, 0%, 100%)
+:root {
+  --light_grayish_cyan: hsl(183, 15%, 76%);
+  --very_dark_cyan: hsl(183, 100%, 15%);
+  --strong_cyan: hsl(172, 67%, 45%);
+  --white: hsl(0, 0%, 100%);
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    background-color: var(--light_grayish_cyan);
-    min-height: 100vh;
-    max-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  background-color: var(--light_grayish_cyan);
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.heading{
-    font-size: 3.2rem;
-    color: var(--very_dark_cyan);
-    margin-bottom: 1rem;
+.heading {
+  font-size: 3.2rem;
+  color: var(--very_dark_cyan);
+  margin-bottom: 1rem;
 }
-.stock_calculator{
-    max-width: 90vw;
-    width: 700px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    padding: 3rem;
-    border-radius: 5px;
-    background-color: var(--white);
+.stock_calculator {
+  max-width: 90vw;
+  width: 700px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  border-radius: 5px;
+  background-color: var(--white);
 }
-.inputbox{
-    margin: 2rem;
-    /* outline: none; */
+.inputbox {
+  margin: 2rem;
+  /* outline: none; */
 }
-.inputbox input{
-    padding: 0.5rem 1rem;
-    outline: none;
-    /* border: none; */
-    border:1px solid var(--strong_cyan);
-    border-radius: 5px;
-    color: var(--very_dark_cyan);
-    background-color: var(--white);
-    font-size: 1.6rem;
-    width: 100%;
-    /* margin: 2rem; */
+.inputbox input {
+  padding: 0.5rem 1rem;
+  outline: none;
+  /* border: none; */
+  border: 1px solid var(--strong_cyan);
+  border-radius: 5px;
+  color: var(--very_dark_cyan);
+  background-color: var(--white);
+  font-size: 1.6rem;
+  width: 100%;
+  /* margin: 2rem; */
 }
-.btn{
-      background-color: var(--very_dark_cyan);
-      color: var(--light_grayish_cyan);
-      border:none;
-      border-radius: 10px;
-      padding: 0.5rem 5rem;
-      font-size: 1.6rem;
-      width: 50%;
-      margin: 2rem auto;
-      
-      
-      
-
-
+.btn {
+  background-color: var(--very_dark_cyan);
+  color: var(--light_grayish_cyan);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 5rem;
+  font-size: 1.6rem;
+  width: 50%;
+  margin: 2rem auto;
+  cursor: pointer;
 }
-.input_data{
+.btn:hover {
+  color: var(--very_dark_cyan);
+  background-color: var(--strong_cyan);
 }
-.output_data{
-    border: 1px solid black;
-    background-color: var(--very_dark_cyan);
-    color: var(--white);
-    font-size: 1.6rem;
-    border-radius: 5px;
-    padding: 3rem;
+.input_data {
 }
-footer{
-    
+.output_data {
+  border: 1px solid black;
+  background-color: var(--very_dark_cyan);
+  color: var(--white);
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 3rem;
 }
 /* social media */
 .social_media {
-    position: fixed;
-    right: 0;
-    top: 0;
-    /* transform: translate(50%,-50%); */
-    transform: translateY(100%);
-  }
-  .social_media li {
-    margin: 5rem 5rem;
-    list-style: none;
-  }
-  .social_media .fab {
-    color: var(--very_dark_cyan);
-  }
-  .social_media .fab:hover {
-    color: var(--strong_cyan);
-    transition: 0.3s;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:930px) {
-    .stock_calculator{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,min-content);
-        justify-items: center;
-    }
-    .social_media{
-        position: relative;
-    }
-    .social_media ul{
-        display: flex;
-        /* margin: 2rem; */
-    }
-    
+  position: fixed;
+  right: 0;
+  top: 0;
+  /* transform: translate(50%,-50%); */
+  transform: translateY(100%);
+}
+.social_media li {
+  margin: 5rem 5rem;
+  list-style: none;
+}
+.social_media .fab {
+  color: var(--very_dark_cyan);
+}
+.social_media .fab:hover {
+  color: var(--strong_cyan);
+  transition: 0.3s;
 }
 
+@media screen and (max-width: 930px) {
+  .stock_calculator {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+    justify-items: center;
+  }
+  .social_media {
+    position: relative;
+  }
+  .social_media ul {
+    display: flex;
+    /* margin: 2rem; */
+  }
+}
